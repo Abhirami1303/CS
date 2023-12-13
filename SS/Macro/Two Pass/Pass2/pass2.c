@@ -36,7 +36,7 @@ int main()
                 {
                     flag = 1;
                     len = strlen(operand);
-		                fseek(f4,0,SEEK_SET);
+		    fseek(f4,0,SEEK_SET);
                     for (i = 0; i < len; i++)
                     {
                         if (operand[i] != ',')
@@ -44,7 +44,7 @@ int main()
                         else
                             fprintf(f4, "\n");
                     }
-		                fprintf(f4, "\n");
+		    fprintf(f4, "\n");
                     rewind(f2);
                     rewind(f4);
                     rewind(f3);
